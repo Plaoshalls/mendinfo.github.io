@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MendInfo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    :root {
+      --azul: #007BFF;
+      --azul-escuro: #0056b3;
+      --cinza: #f0f0f0;
+      --branco: #ffffff;
+      --cinza-texto: #555;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background-color: var(--cinza);
+      color: var(--cinza-texto);
+    }
+    header {
+      background-color: var(--azul);
+      color: var(--branco);
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: var(--azul-escuro);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 0;
+      animation: slideIn 1s ease-out;
+    }
+    nav a {
+      color: var(--branco);
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background-color: transparent;
+    }
+    nav a:hover {
+      background-color: var(--azul);
+      transform: scale(1.05);
+    }
+    section {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: var(--branco);
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease;
+    }
+    h1, h2 {
+      color: var(--azul-escuro);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background-color: var(--azul-escuro);
+      color: var(--branco);
+    }
+    @keyframes slideIn {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MendInfo</h1>
+    <p>Seu portal de tecnologia, entretenimento e muito mais</p>
+  </header>
+
+  <nav>
+    <a href="#programas"><i class="fas fa-laptop-code"></i> Programas</a>
+    <a href="#musicas"><i class="fas fa-music"></i> Músicas</a>
+    <a href="#jogos"><i class="fas fa-gamepad"></i> Jogos</a>
+    <a href="#filmes"><i class="fas fa-film"></i> Filmes</a>
+    <a href="#series"><i class="fas fa-tv"></i> Séries</a>
+    <a href="#celulares"><i class="fas fa-mobile-alt"></i> Celulares</a>
+  </nav>
+
+  <section id="programas">
+    <h2><i class="fas fa-laptop-code"></i> Programas</h2>
+    <p>Explore os melhores softwares para produtividade, segurança e criatividade.</p>
+  </section>
+
+  <section id="musicas">
+    <h2><i class="fas fa-music"></i> Músicas</h2>
+    <p>Descubra playlists, lançamentos e artistas em destaque.</p>
+  </section>
+
+  <section id="jogos">
+    <h2><i class="fas fa-gamepad"></i> Jogos</h2>
+    <p>Fique por dentro dos games mais jogados e lançamentos incríveis.</p>
+  </section>
+
+  <section id="filmes">
+    <h2><i class="fas fa-film"></i> Filmes</h2>
+    <p>Dicas de filmes, estreias do cinema e clássicos que marcaram época.</p>
+  </section>
+
+  <section id="series">
+    <h2><i class="fas fa-tv"></i> Séries</h2>
+    <p>As melhores séries para maratonar nas principais plataformas de streaming.</p>
+  </section>
+
+  <section id="celulares">
+    <h2><i class="fas fa-mobile-alt"></i> Celulares</h2>
+    <p>Notícias, reviews e comparativos dos smartphones mais recentes.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MendInfo. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
