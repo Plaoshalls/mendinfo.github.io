@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MendInfo</title>
+  <style>
+    :root {
+      --azul: #007BFF;
+      --azul-escuro: #0056b3;
+      --cinza: #f0f0f0;
+      --branco: #ffffff;
+      --cinza-texto: #555;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--cinza);
+      color: var(--cinza-texto);
+    }
+
+    header {
+      background-color: var(--azul);
+      color: var(--branco);
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: var(--azul-escuro);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: var(--branco);
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: var(--azul);
+    }
+
+    section {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: var(--branco);
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: var(--azul-escuro);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background-color: var(--azul-escuro);
+      color: var(--branco);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MendInfo</h1>
+    <p>Seu portal de tecnologia, entretenimento e muito mais</p>
+  </header>
+
+  <nav>
+    <a href="#programas">Programas</a>
+    <a href="#musicas">Músicas</a>
+    <a href="#jogos">Jogos</a>
+    <a href="#filmes">Filmes</a>
+    <a href="#series">Séries</a>
+    <a href="#celulares">Celulares</a>
+  </nav>
+
+  <section id="programas">
+    <h2>Programas</h2>
+    <p>Explore os melhores softwares para produtividade, segurança e criatividade.</p>
+  </section>
+
+  <section id="musicas">
+    <h2>Músicas</h2>
+    <p>Descubra playlists, lançamentos e artistas em destaque.</p>
+  </section>
+
+  <section id="jogos">
+    <h2>Jogos</h2>
+    <p>Fique por dentro dos games mais jogados e lançamentos incríveis.</p>
+  </section>
+
+  <section id="filmes">
+    <h2>Filmes</h2>
+    <p>Dicas de filmes, estreias do cinema e clássicos que marcaram época.</p>
+  </section>
+
+  <section id="series">
+    <h2>Séries</h2>
+    <p>As melhores séries para maratonar nas principais plataformas de streaming.</p>
+  </section>
+
+  <section id="celulares">
+    <h2>Celulares</h2>
+    <p>Notícias, reviews e comparativos dos smartphones mais recentes.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MendInfo. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
